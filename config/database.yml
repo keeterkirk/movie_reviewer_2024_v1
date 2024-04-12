@@ -6,8 +6,8 @@ default: &default
 development:
   <<: *default
   database: movie_reviewer_2024_v1_development
-  password: <%= ENV['LOCAL_PASSWORD'] %>
   username: <%= ENV['LOCAL_USERNAME'] %>
+  password: <%= ENV['LOCAL_PASSWORD'] %>
 
 test:
   <<: *default
